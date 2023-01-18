@@ -1,29 +1,49 @@
 import React, { useState } from "react";
-import { Modal, Button, Icon } from "antd";
+import { Col, Modal, Row } from "react-bootstrap";
 import styles from "../pages/style.module.css";
 import info from "../assets/info.png";
+import cancel from "../assets/cancel.png";
 
-function ImageModal({ text }) {
-  const [modalVisible, setModalVisible] = useState(false);
-  const handleIconClick = () => {
-    setModalVisible(!modalVisible);
-  };
+function ImageModal({ text, style }) {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div>
       <img
         src={info}
-        alt="alt"
-        onClick={() => setModalVisible(true)}
+        alt="info"
+        onClick={() => setShowModal(true)}
         className={styles.infoIcon}
       />
       <Modal
-        title="Modal Title"
-        open={modalVisible}
-        onOk={handleIconClick}
-        onCancel={handleIconClick}
-        style={{ color: "#545454" }}
+        show={showModal}
+        onHide={() => setShowModal(false)}
+        size="sm"
+        backdrop="static"
+        style={style}
       >
-        <p>{text}</p>
+        <Modal.Header
+          style={{
+            backgroundColor: "#545454",
+            borderRadius: 8,
+            borderColor: "#545454"
+          }}
+        >
+          <Row>
+            <Col xs={2}>
+              <img
+                src={cancel}
+                alt="cancel"
+                onClick={() => setShowModal(false)}
+                style={{ filter: "brightness(0) invert(1)" }}
+                className={styles.cancelButton}
+              />
+            </Col>
+            <Col xs={10}>
+              <p style={{ color: "white" }}>{text}</p>
+            </Col>
+          </Row>
+        </Modal.Header>
       </Modal>
     </div>
   );

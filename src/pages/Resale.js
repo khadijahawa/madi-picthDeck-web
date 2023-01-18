@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import cancel from "../assets/cancelScreen.png";
-import info from "../assets/info.png";
 import vestiaire from "../assets/vestiaire.png";
 import grailed from "../assets/grailed.png";
 import rerobe from "../assets/rerobe.png";
@@ -17,7 +16,6 @@ function Resale() {
   const [value, setValue] = useState(1);
 
   const onClick = (e) => {
-    // console.log("radio checked", e.target.value);
     setValue(e.target.value);
     const selectedValue = e.target.value;
 
@@ -52,7 +50,7 @@ function Resale() {
               marginBottom: 12
             }}
           >
-            <img src={cancel} />
+            <img src={cancel} alt="cancel" />
           </div>
         </Link>
         <p
@@ -76,7 +74,7 @@ function Resale() {
       <p style={{ fontFamily: "LexendLight", fontSize: 14, color: "#717171" }}>
         Here are some options for you!
       </p>
-      <img src={home} style={{ width: "100%" }} />
+      <img src={home} style={{ width: "100%" }} alt="home" />
       <div>
         <Row>
           <Col xs={6}>
@@ -131,7 +129,6 @@ function Resale() {
       </div>
       <hr
         style={{
-          // marginLeft: "3%",
           backgroundColor: "black",
           height: 1,
           width: "100%"
@@ -151,15 +148,22 @@ function Resale() {
           </Col>
           <Col>
             <ImageModal
+              text="1.Chose which resaler you wish to sell through. &nbsp;
+               2.Be directed to their site where all your product information is there. &nbsp; &nbsp;  3. Just enter its condition and it’s ready for sale. &nbsp; &nbsp; &nbsp; "
               style={{
-                marginRight: "90%",
-                paddingRight: "90%"
+                top: "45%",
+                height: "45%",
+                width: "65%",
+                left: "32%",
+                padding: 2,
+                alignItems: "center"
               }}
             />
           </Col>
         </Row>
         <Radio.Group
           onChange={onClick}
+          value={value}
           style={{
             display: "flex",
             justifyContent: "space-evenly",
@@ -184,13 +188,9 @@ function Resale() {
                     marginRight: 10,
                     paddingRight: 10
                   }}
+                  alt="vestiaire"
                 />
-                <p
-                // style={{
-                //   marginLeft: 35,
-                //   paddingLeft: 35
-                // }}
-                >
+                <p>
                   Est. resale price: 150€
                   <br />
                   Your estimated commission: 85€
@@ -214,14 +214,10 @@ function Resale() {
                     marginRight: 10,
                     paddingRight: 10
                   }}
+                  alt="rerobe"
                 />
 
-                <p
-                // style={{
-                //   marginLeft: 35,
-                //   paddingLeft: 35
-                // }}
-                >
+                <p>
                   Est. resale price: 150€
                   <br /> Your estimated commission: 85€
                 </p>
@@ -243,13 +239,9 @@ function Resale() {
                     marginRight: 10,
                     paddingRight: 10
                   }}
+                  alt="grailed"
                 />
-                <p
-                // style={{
-                //   marginLeft: 35,
-                //   paddingLeft: 35
-                // }}
-                >
+                <p>
                   Est. resale price: 150€
                   <br /> Your estimated commission: 85€
                 </p>

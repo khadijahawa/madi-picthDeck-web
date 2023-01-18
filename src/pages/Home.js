@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import ImageModal from "../components/ImageModal";
 import { Link } from "react-router-dom";
 
-import info from "../assets/info.png";
 import home from "../assets/Home.png";
 import logo from "../assets/logo.png";
 
@@ -15,15 +14,25 @@ const Home = () => {
       style={{ textAlign: "center", padding: "5%" }}
     >
       <div>
-        <img src={logo} className={styles.logo} />
+        <img src={logo} className={styles.logo} alt="althome" />
         <div className={styles.digitalidtext}>
           <p>This is your digital ID: 12435433</p>
         </div>
       </div>
-      <img src={home} style={{ width: "100%" }} />
+      <img src={home} style={{ width: "100%" }} alt="althome" />
       <div className={styles.info} style={{ justifyContent: "center" }}>
         <p className={styles.text}>This product is authenticated</p>
-        <ImageModal text="this is my text" />
+        <ImageModal
+          text="This product is authenticated by MĀDI."
+          style={{
+            top: "45%",
+            height: "45%",
+            width: "65%",
+            left: "32%",
+            padding: 2,
+            alignItems: "center"
+          }}
+        />
       </div>
       <h3 className={styles.customText}>Light Beige Turtleneck Sweater</h3>
       <p className={styles.digitalidtext}>250 €</p>
