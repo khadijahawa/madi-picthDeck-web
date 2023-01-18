@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import Home from "./pages/Home";
+import Care from "./pages/Care";
+import Repair from "./pages/Repair";
+import OriginStory from "./pages/OriginStory";
+import Resale from "./pages/Resale";
 
-function App() {
+const App = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${screenWidth < 600 ? "mobile" : "desktop"}`}>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/care">
+          <Care />
+        </Route>
+        <Route path="/repair">
+          <Repair />
+        </Route>
+        <Route path="/origin-story">
+          <OriginStory />
+        </Route>
+        <Route path="/resale">
+          <Resale />
+        </Route>
+      </Switch>
     </div>
   );
-}
+};
 
 export default App;
