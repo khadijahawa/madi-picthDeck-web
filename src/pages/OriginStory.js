@@ -26,7 +26,7 @@ const OriginStory = () => {
               marginBottom: 12
             }}
           >
-            <img src={cancel} />
+            <img src={cancel} alt="cancel" />
           </div>
         </Link>
         <p
@@ -38,7 +38,7 @@ const OriginStory = () => {
           Origin Story
         </p>
       </div>
-      <img src={originStory} style={{ width: "100%" }} />
+      <img src={originStory} style={{ width: "100%" }} alt="cancel" />
       <div
         className={styles.container}
         style={{
@@ -106,12 +106,12 @@ const OriginStory = () => {
           Environmental impact
         </p>
         <div className={styles.info}>
-          <img src={Cloud} style={{ width: "8%", height: "8%" }} />
+          <img src={Cloud} style={{ width: "8%", height: "8%" }} alt="cancel" />
           <p>&nbsp;10.5 kg of CO2 or 42 km driven.</p>
         </div>
 
         <div className={styles.info}>
-          <img src={Drop} style={{ width: "8%", height: "8%" }} />
+          <img src={Drop} style={{ width: "8%", height: "8%" }} alt="cancel" />
           <p>&nbsp;Responsibly dyed, certified by REACH.</p>
         </div>
       </div>

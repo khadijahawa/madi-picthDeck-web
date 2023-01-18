@@ -4,7 +4,6 @@ import Map from "../components/Map";
 import location from "../assets/location.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
 
 import cancel from "../assets/cancelScreen.png";
 import styles from "./style.module.css";
@@ -32,7 +31,7 @@ function Repair() {
                 marginBottom: 12
               }}
             >
-              <img src={cancel} />
+              <img src={cancel} alt="cancel" />
             </div>
           </Link>
           <p
@@ -81,7 +80,7 @@ function Repair() {
         <div style={{ padding: "7%" }}>
           <Row xs="auto">
             <Col xs={1}>
-              <img src={location} />
+              <img src={location} alt="cancel" />
             </Col>
             <Col xs={10}>
               <p

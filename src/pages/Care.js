@@ -26,7 +26,7 @@ function Care() {
                 marginBottom: 12
               }}
             >
-              <img src={cancel} />
+              <img src={cancel} alt="cancel" />
             </div>
           </Link>
           <p
@@ -39,7 +39,7 @@ function Care() {
           </p>
         </div>
 
-        <div className={styles.container} style={{}}>
+        <div className={styles.container}>
           <p
             className={styles.customText}
             style={{
@@ -52,7 +52,7 @@ function Care() {
             <br />
           </p>
           <div className={styles.info} style={{ justifyContent: "flex-start" }}>
-            <img src={washing} style={{ margin: 4, padding: 4 }} />
+            <img src={washing} style={{ margin: 4, padding: 4 }} alt="cancel" />
             <p
               className={styles.customText}
               style={{
@@ -79,7 +79,7 @@ function Care() {
             <br />
           </p>
           <div className={styles.info} style={{ justifyContent: "flex-start" }}>
-            <img src={drying} style={{ margin: 6, padding: 6 }} />
+            <img src={drying} style={{ margin: 6, padding: 6 }} alt="cancel" />
             <p
               className={styles.customText}
               style={{
@@ -107,7 +107,11 @@ function Care() {
             <br />
           </p>
           <div className={styles.info} style={{ justifyContent: "flex-start" }}>
-            <img src={extraCare} style={{ margin: 4, padding: 4 }} />
+            <img
+              src={extraCare}
+              style={{ margin: 4, padding: 4 }}
+              alt="cancel"
+            />
             <p
               className={styles.customText}
               style={{

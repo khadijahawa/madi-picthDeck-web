@@ -1,7 +1,6 @@
 import React from "react";
 import ImageModal from "../components/ImageModal";
 import { Link } from "react-router-dom";
-
 import home from "../assets/Home.png";
 import logo from "../assets/logo.png";
 
