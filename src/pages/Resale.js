@@ -258,7 +258,7 @@ function Resale() {
           </Space>
         </Radio.Group>
         <div style={{ padding: "1%", marginRight: "3%" }}>
-          <Link to="/Home">
+          <Link to="/">
             <button
               className={styles.HomeButton}
               data-toggle="collapse"

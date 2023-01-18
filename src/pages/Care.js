@@ -9,7 +9,7 @@ import styles from "./style.module.css";
 function Care() {
   return (
     <div className={styles.container}>
-      <div className={styles.container} style={{ padding: 25 }}>
+      <div className={styles.container} style={{ padding: "5%" }}>
         <div
           className={styles.info}
           style={{

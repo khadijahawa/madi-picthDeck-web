@@ -9,14 +9,14 @@ import styles from "./style.module.css";
 
 const OriginStory = () => {
   return (
-    <div className={styles.container} style={{ padding: 10 }}>
+    <div style={{ padding: "5%" }}>
       <div
         className={styles.info}
         style={{
           justifyContent: "space-between",
-          textAlign: "center",
-          alignItems: "center",
-          alignSelf: "center",
+          // textAlign: "center",
+          // alignItems: "center",
+          // alignSelf: "center",
           width: "70%"
         }}
       >
@@ -103,36 +103,16 @@ const OriginStory = () => {
             fontSize: 22
           }}
         >
-          Environmental impact{"\n"}
+          Environmental impact
         </p>
         <div className={styles.info}>
-          <img src={Cloud} style={{ margin: 3 }} />
-          <p
-          // style={[
-          //   styles.customText,
-          //   {
-          //     fontFamily: "LexendLight",
-          //     fontSize: 14
-          //   }
-          // ]}
-          >
-            10.5 kg of CO2 or 42 km driven.{"\n"}
-          </p>
+          <img src={Cloud} style={{ width: "8%", height: "8%" }} />
+          <p>&nbsp;10.5 kg of CO2 or 42 km driven.</p>
         </div>
 
         <div className={styles.info}>
-          <img src={Drop} style={{ margin: 3 }} />
-          <p
-          // style={[
-          //   styles.customText,
-          //   {
-          //     fontFamily: "LexendLight",
-          //     fontSize: 14
-          //   }
-          // ]}
-          >
-            Responsibly dyed, certified by REACH.{"\n"}
-          </p>
+          <img src={Drop} style={{ width: "8%", height: "8%" }} />
+          <p>&nbsp;Responsibly dyed, certified by REACH.</p>
         </div>
       </div>
     </div>

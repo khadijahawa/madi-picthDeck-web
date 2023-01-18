@@ -11,8 +11,11 @@ import styles from "./style.module.css";
 
 function Repair() {
   return (
-    <Container>
-      <div style={{ padding: "1%", margin: "2%" }}>
+    <div>
+      <div
+        style={{ padding: "5%", paddingTop: "10%" }}
+        className={styles.container}
+      >
         <div
           className={styles.info}
           style={{
@@ -53,10 +56,10 @@ function Repair() {
         <p
           className={styles.customText}
           style={{
-            fontFamily: "LexendSemiBold",
-            fontSize: 24
+            fontFamily: "LexendSemiBold"
           }}
         >
+          <br />
           Did you know?
         </p>
         <p
@@ -73,12 +76,14 @@ function Repair() {
           prolong the life of your product, so we recommend a repair shop near
           you."
         </p>
-        <div className={styles.adressSection} style={{ padding: 10 }}>
+      </div>
+      <div className={styles.adressSection}>
+        <div style={{ padding: "7%" }}>
           <Row xs="auto">
-            <Col>
+            <Col xs={1}>
               <img src={location} />
             </Col>
-            <Col>
+            <Col xs={10}>
               <p
                 className={styles.customText}
                 style={{
@@ -105,7 +110,7 @@ function Repair() {
           <Map />
         </div>
       </div>
-    </Container>
+    </div>
   );
 }
 
