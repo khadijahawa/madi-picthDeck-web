@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import vestiaire from "../assets/vestiaire.png";
-import grailed from "../assets/grailed.png";
-import rerobe from "../assets/rerobe.png";
+import vestiaire from "../assets/vestaire.svg";
+import grailed from "../assets/grailed.svg";
+import rerobe from "../assets/Rebebe.svg";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Radio, Space } from "antd";

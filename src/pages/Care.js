@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import washing from "../assets/washing.png";
+import washing from "../assets/washing.svg";
 import drying from "../assets/drying.png";
 import extraCare from "../assets/extraCare.png";
 import styles from "./style.module.css";
@@ -52,12 +52,21 @@ function Care() {
             <br />
           </p>
           <div className={styles.info} style={{ justifyContent: "flex-start" }}>
-            <img src={washing} style={{ margin: 4, padding: 4 }} alt="cancel" />
+            <img
+              src={washing}
+              style={{
+                margin: 4,
+                marginBottom: 12,
+                padding: 4
+              }}
+              alt="washing"
+            />
             <p
               className={styles.customText}
               style={{
                 fontSize: 18,
-                alignSelf: "flex-end"
+                alignSelf: "end",
+                justifySelf: "flex-end"
               }}
             >
               &nbsp; Washing.
