@@ -40,7 +40,13 @@ function ImageModal({ text, style }) {
               />
             </Col>
             <Col xs={10}>
-              <p style={{ color: "white" }}>{text}</p>
+              <p
+                style={{ color: "white" }}
+                className={styles.breakLine}
+                dangerouslySetInnerHTML={{
+                  __html: text.replace(/\n/g, "<br/>")
+                }}
+              />
             </Col>
           </Row>
         </Modal.Header>
