@@ -5,7 +5,7 @@ import location from "../assets/location.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import cancel from "../assets/cancelScreen.png";
+import CloudSvg from "../assets/CancelSvg.svg";
 import styles from "./style.module.css";
 
 function Repair() {
@@ -31,7 +31,7 @@ function Repair() {
                 marginBottom: 12
               }}
             >
-              <img src={cancel} alt="cancel" />
+              <img src={CloudSvg} alt="cancel" />
             </div>
           </Link>
           <p
@@ -73,7 +73,7 @@ function Repair() {
           <br />
           We understand accidents can happen, That's why we want to help you
           prolong the life of your product, so we recommend a repair shop near
-          you."
+          you.
         </p>
       </div>
       <div className={styles.adressSection}>

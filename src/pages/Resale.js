@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import cancel from "../assets/cancelScreen.png";
 import vestiaire from "../assets/vestiaire.png";
 import grailed from "../assets/grailed.png";
 import rerobe from "../assets/rerobe.png";
@@ -9,6 +8,7 @@ import Col from "react-bootstrap/Col";
 import { Radio, Space } from "antd";
 import home from "../assets/Home.png";
 import ImageModal from "../components/ImageModal";
+import CloudSvg from "../assets/CancelSvg.svg";
 
 import styles from "./style.module.css";
 
@@ -50,7 +50,7 @@ function Resale() {
               marginBottom: 12
             }}
           >
-            <img src={cancel} alt="cancel" />
+            <img src={CloudSvg} alt="cancel" />
           </div>
         </Link>
         <p

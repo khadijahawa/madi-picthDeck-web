@@ -14,9 +14,6 @@ const OriginStory = () => {
         className={styles.info}
         style={{
           justifyContent: "space-between",
-          // textAlign: "center",
-          // alignItems: "center",
-          // alignSelf: "center",
           width: "70%"
         }}
       >

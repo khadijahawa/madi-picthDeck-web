@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import cancel from "../assets/cancelScreen.png";
 import washing from "../assets/washing.png";
 import drying from "../assets/drying.png";
 import extraCare from "../assets/extraCare.png";
 import styles from "./style.module.css";
+import CloudSvg from "../assets/CancelSvg.svg";
 
 function Care() {
   return (
@@ -26,7 +26,7 @@ function Care() {
                 marginBottom: 12
               }}
             >
-              <img src={cancel} alt="cancel" />
+              <img src={CloudSvg} alt="cancel" />
             </div>
           </Link>
           <p
