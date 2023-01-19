@@ -15,15 +15,15 @@ import styles from "./style.module.css";
 function Resale() {
   const [value, setValue] = useState(1);
 
-  const onClick = (e) => {
+  const handleChange = (e) => {
     setValue(e.target.value);
-    const selectedValue = e.target.value;
-
-    if (selectedValue === "option1") {
+  };
+  const handleContinue = () => {
+    if (value === "option1") {
       window.location.href = "https://www.vestiairecollective.com/";
-    } else if (selectedValue === "option2") {
+    } else if (value === "option2") {
       window.location.href = "https://rerobe.se/sv-SE";
-    } else if (selectedValue === "option3") {
+    } else if (value === "option3") {
       window.location.href = "https://www.grailed.com/";
     }
   };
@@ -65,8 +65,7 @@ function Resale() {
       <p
         className={styles.customText}
         style={{
-          fontFamily: "LexendBold",
-          fontSize: 16
+          fontFamily: "LexendSemiBold"
         }}
       >
         Interested in selling your Product?
@@ -164,7 +163,7 @@ function Resale() {
           </Col>
         </Row>
         <Radio.Group
-          onChange={onClick}
+          onChange={handleChange}
           value={value}
           style={{
             display: "flex",
@@ -252,17 +251,9 @@ function Resale() {
           </Space>
         </Radio.Group>
         <div style={{ padding: "1%", marginRight: "3%" }}>
-          <Link to="/">
-            <button
-              className={styles.HomeButton}
-              data-toggle="collapse"
-              data-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-              Continue
-            </button>
-          </Link>
+          <button className={styles.HomeButton} onClick={handleContinue}>
+            Continue
+          </button>
         </div>
       </div>
     </div>

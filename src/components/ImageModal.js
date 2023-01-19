@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Modal, Row } from "react-bootstrap";
 import styles from "../pages/style.module.css";
 import info from "../assets/info.png";
@@ -6,6 +6,13 @@ import cancel from "../assets/cancel.png";
 
 function ImageModal({ text, style }) {
   const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    if (showModal) {
+      const modal = document.querySelector(".modal-backdrop");
+      modal.addEventListener("click", () => setShowModal(false));
+    }
+  }, [showModal]);
 
   return (
     <div>
@@ -17,9 +24,9 @@ function ImageModal({ text, style }) {
       />
       <Modal
         show={showModal}
-        onHide={() => setShowModal(false)}
+        // onHide={() => setShowModal(false)}
         size="sm"
-        backdrop="static"
+        backdrop="true"
         style={style}
       >
         <Modal.Header

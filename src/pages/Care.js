@@ -69,7 +69,7 @@ function Care() {
                 justifySelf: "flex-end"
               }}
             >
-              &nbsp; Washing.
+              &nbsp; Washing
             </p>
           </div>
           <p style={{ color: "#717171" }}>
@@ -87,7 +87,7 @@ function Care() {
                 alignSelf: "flex-end"
               }}
             >
-              &nbsp; Drying.
+              &nbsp; Drying
             </p>
           </div>
           <p style={{ color: "#717171" }}>
@@ -110,7 +110,7 @@ function Care() {
                 alignSelf: "flex-end"
               }}
             >
-              &nbsp; Extra Care.
+              &nbsp; Extra Care
             </p>
           </div>
           <p style={{ color: "#717171" }}>
