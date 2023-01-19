@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import cancel from "../assets/cancelScreen.png";
+import cancel from "../assets/cancel.svg";
 import originStory from "../assets/OriginStory.png";
-import Cloud from "../assets/Cloud.png";
-import Drop from "../assets/Drop.png";
+import Cloud from "../assets/Cloud.svg";
+import Drop from "../assets/Drop.svg";
 
 import styles from "./style.module.css";
 
