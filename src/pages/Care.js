@@ -63,16 +63,7 @@ function Care() {
               &nbsp; Washing.
             </p>
           </div>
-          <p
-            // style={[
-            //   styles.customText,
-            //   {
-            //     fontFamily: "LexendLight",
-            //     fontSize: 14
-            //   }
-            // ]}
-            style={{ color: "#717171" }}
-          >
+          <p style={{ color: "#717171" }}>
             <br />
             Hand wash in cold water with wool/ cashmere detergent, or delicate
             cycle with cold water.
@@ -90,16 +81,7 @@ function Care() {
               &nbsp; Drying.
             </p>
           </div>
-          <p
-            // style={[
-            //   styles.customText,
-            //   {
-            //     fontFamily: "LexendLight",
-            //     fontSize: 14
-            //   }
-            // ]}
-            style={{ color: "#717171" }}
-          >
+          <p style={{ color: "#717171" }}>
             <br />
             Lay flat on towel and roll to take out extra water, but don't ring
             out to dry. Roll back out & lay flat to dry on one side. You may
@@ -122,16 +104,7 @@ function Care() {
               &nbsp; Extra Care.
             </p>
           </div>
-          <p
-            // style={[
-            //   styles.customText,
-            //   {
-            //     fontFamily: "LexendLight",
-            //     fontSize: 14
-            //   }
-            // ]}
-            style={{ color: "#717171" }}
-          >
+          <p style={{ color: "#717171" }}>
             After each wear, lay out to air out. Wool sweaters should not be
             laundered often (appx. every 6-10 wears) to last longer.Use a
             sweater comb to take off pilling. (edited)
