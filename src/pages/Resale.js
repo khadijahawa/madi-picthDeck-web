@@ -98,7 +98,7 @@ function Resale() {
               color: "#717171"
             }}
           >
-            <p style={{ alignSelf: "flex-start" }}>250 €</p>
+            <p className="text-end">250 €</p>
           </Col>
         </Row>
         <Row>
@@ -148,14 +148,17 @@ function Resale() {
           </Col>
           <Col>
             <ImageModal
-              text="1.Chose which resaler you wish to sell through. 2.Be directed to their site where all your product information is there.   3. Just enter its condition and it’s ready for sale. "
+              text={
+                "1.Chose which resaler you wish to sell through.\n2.Be directed to their site where all your product information is there.\n3. Just enter its condition and it’s ready for sale. &nbsp; "
+              }
               style={{
                 top: "45%",
                 height: "45%",
                 width: "65%",
                 left: "32%",
                 padding: 2,
-                alignItems: "center"
+                alignItems: "center",
+                whiteSpace: "pre-line"
               }}
             />
           </Col>

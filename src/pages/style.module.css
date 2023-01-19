@@ -71,4 +71,5 @@
 
 .breakLine {
   white-space: pre-line;
+  word-break: break-all;
 }
