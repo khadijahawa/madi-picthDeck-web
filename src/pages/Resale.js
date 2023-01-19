@@ -27,6 +27,7 @@ function Resale() {
       window.location.href = "https://www.grailed.com/";
     }
   };
+
   return (
     <div
       className={styles.container}
@@ -147,10 +148,7 @@ function Resale() {
           </Col>
           <Col>
             <ImageModal
-              text="
-              1.Chose which resaler you wish to sell through.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              2.Be directed to their site where all your product information is there.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              3. Just enter its condition and it’s ready for sale.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+              text="1.Chose which resaler you wish to sell through. 2.Be directed to their site where all your product information is there.   3. Just enter its condition and it’s ready for sale. "
               style={{
                 top: "45%",
                 height: "45%",

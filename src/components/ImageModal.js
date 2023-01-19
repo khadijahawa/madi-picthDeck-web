@@ -13,6 +13,13 @@ function ImageModal({ text, style }) {
       modal.addEventListener("click", () => setShowModal(false));
     }
   }, [showModal]);
+  const lines = text.split("\n");
+  const formattedText = lines.map((line, index) => (
+    <React.Fragment key={index}>
+      {line}
+      <br />
+    </React.Fragment>
+  ));
 
   return (
     <div>
@@ -50,10 +57,12 @@ function ImageModal({ text, style }) {
               <p
                 style={{ color: "white" }}
                 className={styles.breakLine}
-                dangerouslySetInnerHTML={{
-                  __html: text.replace(/\n/g, "<br/>")
-                }}
-              />
+                // dangerouslySetInnerHTML={{
+                //   __html: text.replace(/\n/g, "<br/>")
+                // }}
+              >
+                {formattedText}
+              </p>
             </Col>
           </Row>
         </Modal.Header>
