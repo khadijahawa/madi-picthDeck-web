@@ -69,7 +69,7 @@ function Resale() {
           fontFamily: "LexendSemiBold"
         }}
       >
-        Interested in selling your Product?
+        Interested In Selling Your Product?
       </p>
       <p style={{ fontFamily: "LexendLight", fontSize: 14, color: "#717171" }}>
         Here are some options for you!
@@ -77,7 +77,7 @@ function Resale() {
       <img src={home} style={{ width: "100%" }} alt="home" />
       <div>
         <Row>
-          <Col xs={6}>
+          <Col xs={7}>
             <p
               style={{
                 color: "black",
@@ -90,7 +90,7 @@ function Resale() {
             </p>
           </Col>
           <Col
-            xs={2}
+            xs={3}
             style={{
               marginLeft: "16%",
               fontFamily: "LexendRegular",
@@ -102,7 +102,7 @@ function Resale() {
           </Col>
         </Row>
         <Row>
-          <Col xs={5}>
+          <Col xs={6} sm={4}>
             <p
               style={{
                 color: "black",
@@ -115,13 +115,14 @@ function Resale() {
             </p>
           </Col>
           <Col
-            xs={5}
-            m={2}
+            xs={6}
+            // sm={2}
+            // m={4}
             style={{
-              marginLeft: "16%",
               fontFamily: "LexendRegular",
               color: "#717171"
             }}
+            className="text-end"
           >
             <p>2 December 2022</p>
           </Col>

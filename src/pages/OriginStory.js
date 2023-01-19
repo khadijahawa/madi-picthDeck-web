@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import cancel from "../assets/cancel.svg";
+import cancel from "../assets/CancelSvg.svg";
 import originStory from "../assets/OriginStory.png";
 import Cloud from "../assets/Cloud.svg";
 import Drop from "../assets/Drop.svg";
