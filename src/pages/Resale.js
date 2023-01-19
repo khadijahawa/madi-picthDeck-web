@@ -148,9 +148,9 @@ function Resale() {
           <Col>
             <ImageModal
               text="
-              1.Chose which resaler you wish to sell through.&nbsp;&nbsp;&nbsp;
-              2.Be directed to their site where all your product information is there.&nbsp;&nbsp;&nbsp;
-              3. Just enter its condition and it’s ready for sale.&nbsp;&nbsp;&nbsp;"
+              1.Chose which resaler you wish to sell through.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              2.Be directed to their site where all your product information is there.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              3. Just enter its condition and it’s ready for sale.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
               style={{
                 top: "45%",
                 height: "45%",
