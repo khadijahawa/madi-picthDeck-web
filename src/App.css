@@ -15,3 +15,6 @@
     font-size: 20px;
   }
 }
+.modal-backdrop.show {
+  opacity: 0 !important;
+}

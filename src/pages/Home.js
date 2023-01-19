@@ -25,7 +25,6 @@ const Home = () => {
           text="This product is authenticated by MĀDI."
           style={{
             top: "45%",
-            height: "45%",
             width: "65%",
             left: "32%",
             padding: 2,

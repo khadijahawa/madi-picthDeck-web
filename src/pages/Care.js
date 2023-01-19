@@ -47,6 +47,7 @@ function Care() {
               fontSize: 20
             }}
           >
+            <br />
             How To Take Care Of Your Garment
             <br />
             <br />

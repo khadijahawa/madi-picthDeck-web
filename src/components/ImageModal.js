@@ -24,9 +24,10 @@ function ImageModal({ text, style }) {
       />
       <Modal
         show={showModal}
-        // onHide={() => setShowModal(false)}
         size="sm"
-        backdrop="true"
+        backdrop="static"
+        animation="false"
+        fullscreen="false"
         style={style}
       >
         <Modal.Header

@@ -79,3 +79,7 @@
   white-space: pre-line;
   word-break: break-all;
 }
+
+.modal.show {
+  opacity: 0 !important;
+}
