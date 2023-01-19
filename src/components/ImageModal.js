@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Col, Modal, Row } from "react-bootstrap";
 import styles from "../pages/style.module.css";
-import info from "../assets/info.png";
-import cancel from "../assets/cancel.png";
+import info from "../assets/info.svg";
+import cancel from "../assets/cancel.svg";
 
 function ImageModal({ text, style }) {
   const [showModal, setShowModal] = useState(false);
@@ -20,7 +20,7 @@ function ImageModal({ text, style }) {
         src={info}
         alt="info"
         onClick={() => setShowModal(true)}
-        className={styles.infoIcon}
+        // className={styles.infoIcon}
       />
       <Modal
         show={showModal}

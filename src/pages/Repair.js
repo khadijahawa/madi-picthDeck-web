@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Map from "../components/Map";
-import location from "../assets/location.png";
+import location from "../assets/location.svg";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -39,15 +39,6 @@ function Repair() {
             style={{
               fontSize: 24
             }}
-            // style={[
-            //   styles.customText,
-            //   {
-            //     fontFamily: "LexendBold",
-            //     fontSize: 22,
-            //     lineHeight: 90,
-            //     right: "25%"
-            //   }
-            // ]}
           >
             Repair
           </p>
@@ -84,23 +75,22 @@ function Repair() {
             </Col>
             <Col xs={10}>
               <p
-                className={styles.customText}
+                // className={styles.customText}
                 style={{
                   fontFamily: "LexendSemiBold",
                   fontSize: 16,
                   fontWeight: 600
                 }}
+                className="text-start"
               >
                 &nbsp; Fix & Wear
               </p>
               <p
-              // style={[
-              //   styles.customText,
-              //   {
-              //     fontFamily: "LexendLight",
-              //     fontSize: 14
-              //   }
-              // ]}
+                style={{
+                  fontFamily: "LexendLight",
+                  fontSize: 14
+                }}
+                className="text-start"
               >
                 &nbsp; Rådhusstræde 8, 1466 København
               </p>

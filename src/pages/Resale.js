@@ -144,20 +144,20 @@ function Resale() {
           }}
           xs="auto"
         >
-          <Col>
+          <Col style={{ paddingLeft: "10%" }}>
             <p>Resale options</p>
           </Col>
           <Col>
             <ImageModal
               text={
-                "1.Chose which resaler you wish to sell through.\n2.Be directed to their site where all your product information is there.\n3. Just enter its condition and it’s ready for sale. &nbsp; "
+                "1. Chose which resaler you wish to sell through.\n\n2. Be directed to their site where all your product information is there.\n\n3. Just enter its condition and it’s ready for sale."
               }
               style={{
                 top: "45%",
                 height: "45%",
                 width: "65%",
                 left: "32%",
-                padding: 2,
+                padding: "2%",
                 alignItems: "center",
                 whiteSpace: "pre-line"
               }}
@@ -193,10 +193,12 @@ function Resale() {
                   }}
                   alt="vestiaire"
                 />
-                <p>
-                  Est. resale price: 150€
+                <p className="text-end" style={{ fontFamily: "Lexend" }}>
+                  Est. resale price:{" "}
+                  <span style={{ color: "#717171" }}>150€</span>
                   <br />
-                  Your estimated commission: 85€
+                  Your estimated commission:{" "}
+                  <span style={{ color: "#717171" }}>85€</span>
                 </p>
               </div>
             </Radio>
@@ -220,9 +222,11 @@ function Resale() {
                   alt="rerobe"
                 />
 
-                <p>
-                  Est. resale price: 150€
-                  <br /> Your estimated commission: 85€
+                <p className="text-end" style={{ fontFamily: "Lexend" }}>
+                  Est. resale price:{" "}
+                  <span style={{ color: "#717171" }}>150€</span>
+                  <br /> Your estimated commission:{" "}
+                  <span style={{ color: "#717171" }}>85€</span>
                 </p>
               </div>
             </Radio>
@@ -244,9 +248,11 @@ function Resale() {
                   }}
                   alt="grailed"
                 />
-                <p>
-                  Est. resale price: 150€
-                  <br /> Your estimated commission: 85€
+                <p className="text-end" style={{ fontFamily: "Lexend" }}>
+                  Est. resale price:{" "}
+                  <span style={{ color: "#717171" }}>150€</span>
+                  <br /> Your estimated commission:{" "}
+                  <span style={{ color: "#717171" }}>85€</span>
                 </p>
               </div>
             </Radio>
