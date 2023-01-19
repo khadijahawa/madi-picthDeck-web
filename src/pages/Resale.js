@@ -144,7 +144,7 @@ function Resale() {
           }}
           xs="auto"
         >
-          <Col style={{ paddingLeft: "10%" }}>
+          <Col>
             <p>Resale options</p>
           </Col>
           <Col>
