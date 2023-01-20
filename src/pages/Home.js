@@ -37,7 +37,7 @@ const Home = () => {
       <hr
         style={{
           marginLeft: "2.5%",
-          // marginRight: "6%",
+          marginRight: "2%",
           padding: 0.5,
           color: "black",
           backgroundColor: "black",
@@ -45,7 +45,7 @@ const Home = () => {
           // width: "100%"
         }}
       />
-      <div style={{ marginRight: "2.5%" }}>
+      <div style={{ marginRight: 5 }}>
         <div className="accordion" id="accordionExample">
           <div className={styles.HomeButtonSection}>
             <div id="headingOne" className={styles.HomeButtonText}>

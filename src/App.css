@@ -18,3 +18,8 @@
 .modal-backdrop.show {
   opacity: 0 !important;
 }
+
+/* iframe {
+  width: 600px;
+  height: 400px;
+} */
