@@ -96,15 +96,6 @@ function Repair() {
               </p>
             </Col>
           </Row>
-          {/* <a
-            href={`https://www.google.com/maps/place/R%C3%A5dhusstr%C3%A6de+8,+1466+K%C3%B8benhavn`}
-            target="_blank"
-          >
-            <img
-              src="https://maps.google.com/maps?q=R%C3%A5dhusstr%C3%A6de%208,%201466%20K%C3%B8benhavn&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              alt="Map of Rådhusstræde 8, 1466 København"
-            />
-          </a> */}
           <Map />
         </div>
       </div>
