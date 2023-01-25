@@ -109,7 +109,7 @@ const OriginStory = () => {
 
         <div className={styles.info}>
           <img src={Drop} style={{ width: "8%", height: "8%" }} alt="cancel" />
-          <p>&nbsp;Responsibly dyed, certified by REACH.</p>
+          <p>&nbsp;Responsibly dyed</p>
         </div>
       </div>
     </div>
