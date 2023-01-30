@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import vestiaire from "../assets/vestaire.svg";
 import grailed from "../assets/grailed.svg";
@@ -13,6 +13,10 @@ import CloudSvg from "../assets/CancelSvg.svg";
 import styles from "./style.module.css";
 
 function Resale() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [value, setValue] = useState(1);
 
   const handleChange = (e) => {
@@ -29,7 +33,7 @@ function Resale() {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column-reverse" }}>
+    <div>
       <div
         className={styles.container}
         style={{

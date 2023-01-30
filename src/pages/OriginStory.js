@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import cancel from "../assets/CancelSvg.svg";
 import originStory from "../assets/OriginStory.png";
@@ -8,6 +8,10 @@ import Drop from "../assets/Drop.svg";
 import styles from "./style.module.css";
 
 const OriginStory = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div style={{ padding: "5%" }}>
       <div

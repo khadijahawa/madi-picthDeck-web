@@ -1,15 +1,37 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import ImageModal from "../components/ImageModal";
-import { Link } from "react-router-dom";
 import home from "../assets/Home.png";
 import logo from "../assets/logo.svg";
-
 import styles from "./style.module.css";
 
 const Home = () => {
+  const history = useNavigate();
+
+  const gottoCare = (e) => {
+    e.preventDefault();
+
+    history("/care");
+  };
+  const gottoRepair = (e) => {
+    e.preventDefault();
+
+    history("/repair");
+  };
+  const gottoResale = (e) => {
+    e.preventDefault();
+
+    history("/resale");
+  };
+  const gottoOriginStory = (e) => {
+    e.preventDefault();
+
+    history("/origin-story");
+  };
   return (
     <div
-      className={styles.container}
+      // className={styles.container}
       style={{ textAlign: "center", padding: "5%" }}
     >
       <div>
@@ -51,24 +73,24 @@ const Home = () => {
         <div className="accordion" id="accordionExample">
           <div className={styles.HomeButtonSection}>
             <div id="headingOne" className={styles.HomeButtonText}>
-              <Link to="/origin-story">
-                <button className={styles.HomeButton}>Origin Story</button>
-              </Link>
+              <button className={styles.HomeButton} onClick={gottoOriginStory}>
+                Origin Story
+              </button>
             </div>
             <div id="headingTow">
-              <Link to="/care">
-                <button className={styles.HomeButton}>Care</button>
-              </Link>
+              <button className={styles.HomeButton} onClick={gottoCare}>
+                Care
+              </button>
             </div>
             <div id="headingThree">
-              <Link to="/repair">
-                <button className={styles.HomeButton}>Repair</button>
-              </Link>
+              <button className={styles.HomeButton} onClick={gottoRepair}>
+                Repair
+              </button>
             </div>
             <div id="headingFour">
-              <Link to="/resale">
-                <button className={styles.HomeButton}>Resale</button>
-              </Link>
+              <button className={styles.HomeButton} onClick={gottoResale}>
+                Resale
+              </button>
             </div>
           </div>
         </div>

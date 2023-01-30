@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import washing from "../assets/washing.svg";
+import washing from "../assets/washing.png";
 import drying from "../assets/drying.png";
 import extraCare from "../assets/extraCare.png";
 import styles from "./style.module.css";
 import CloudSvg from "../assets/CancelSvg.svg";
 
 function Care() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.container} style={{ padding: "5%" }}>

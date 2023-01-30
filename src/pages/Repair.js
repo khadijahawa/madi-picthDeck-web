@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Map from "../components/Map";
 import location from "../assets/location.svg";
@@ -9,40 +9,12 @@ import CloudSvg from "../assets/CancelSvg.svg";
 import styles from "./style.module.css";
 
 function Repair() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div style={{ display: "flex", flexDirection: "column-reverse" }}>
-      <div className={styles.adressSection}>
-        <div style={{ padding: "7%" }}>
-          <Row xs="auto">
-            <Col xs={1}>
-              <img src={location} alt="cancel" />
-            </Col>
-            <Col xs={10}>
-              <p
-                // className={styles.customText}
-                style={{
-                  fontFamily: "LexendSemiBold",
-                  fontSize: 16,
-                  fontWeight: 600
-                }}
-                className="text-start"
-              >
-                &nbsp; Fix & Wear
-              </p>
-              <p
-                style={{
-                  fontFamily: "LexendLight",
-                  fontSize: 14
-                }}
-                className="text-start"
-              >
-                &nbsp; Rådhusstræde 8, 1466 København
-              </p>
-            </Col>
-          </Row>
-          <Map />
-        </div>
-      </div>
+    <div>
       <div
         style={{ padding: "5%", paddingTop: "10%" }}
         className={styles.container}
@@ -99,7 +71,7 @@ function Repair() {
           you.
         </p>
       </div>
-      {/* <div className={styles.adressSection}>
+      <div className={styles.adressSection}>
         <div style={{ padding: "7%" }}>
           <Row xs="auto">
             <Col xs={1}>
@@ -130,7 +102,7 @@ function Repair() {
           </Row>
           <Map />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
