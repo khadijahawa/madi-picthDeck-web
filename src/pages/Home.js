@@ -20,7 +20,9 @@ const Home = () => {
       </div>
       <img src={home} style={{ width: "100%" }} alt="althome" />
       <div className={styles.info} style={{ justifyContent: "center" }}>
-        <p className={styles.text}>This product is authenticated</p>
+        <p className={styles.text} style={{ marginRight: 4 }}>
+          This product is authenticated
+        </p>
         <ImageModal
           text="This product is authenticated by MĀDI."
           style={{
