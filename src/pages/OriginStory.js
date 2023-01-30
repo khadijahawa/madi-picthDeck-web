@@ -19,9 +19,9 @@ const OriginStory = () => {
       >
         <Link to="/">
           <div
-            style={{
-              marginBottom: 12
-            }}
+          // style={{
+          //   marginBottom: 10
+          // }}
           >
             <img src={cancel} alt="cancel" />
           </div>
