@@ -14,7 +14,11 @@ const OriginStory = () => {
         className={styles.info}
         style={{
           justifyContent: "space-between",
-          width: "70%"
+          width: "70%",
+          paddingTop: 7,
+          paddingBottom: 7,
+          marginTop: 7,
+          marginBottom: 7
         }}
       >
         <Link to="/">
@@ -26,14 +30,14 @@ const OriginStory = () => {
             <img src={cancel} alt="cancel" />
           </div>
         </Link>
-        <p
+        <div
           className={styles.customText}
           style={{
             fontSize: 24
           }}
         >
           Origin Story
-        </p>
+        </div>
       </div>
       <img src={originStory} style={{ width: "100%" }} alt="cancel" />
       <div

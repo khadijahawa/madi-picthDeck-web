@@ -28,20 +28,20 @@ function Repair() {
           <Link to="/">
             <div
               style={{
-                marginBottom: 12
+                marginBottom: 4
               }}
             >
               <img src={CloudSvg} alt="cancel" />
             </div>
           </Link>
-          <p
+          <div
             className={styles.customText}
             style={{
               fontSize: 24
             }}
           >
             Repair
-          </p>
+          </div>
         </div>
         <p
           className={styles.customText}

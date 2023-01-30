@@ -18,25 +18,25 @@ function Care() {
             alignItems: "center",
             alignSelf: "center",
             width: "60%"
+            // paddingTop: 7,
+            // paddingBottom: 7,
+            // marginTop: 7,
+            // marginBottom: 7
           }}
         >
           <Link to="/">
-            <div
-              style={{
-                marginBottom: 12
-              }}
-            >
+            <div style={{ marginBottom: 4 }}>
               <img src={CloudSvg} alt="cancel" />
             </div>
           </Link>
-          <p
+          <div
             className={styles.customText}
             style={{
               fontSize: 24
             }}
           >
             Care
-          </p>
+          </div>
         </div>
 
         <div className={styles.container}>
