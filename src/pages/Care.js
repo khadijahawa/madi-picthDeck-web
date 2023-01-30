@@ -18,10 +18,6 @@ function Care() {
             alignItems: "center",
             alignSelf: "center",
             width: "60%"
-            // paddingTop: 7,
-            // paddingBottom: 7,
-            // marginTop: 7,
-            // marginBottom: 7
           }}
         >
           <Link to="/">
@@ -40,7 +36,7 @@ function Care() {
         </div>
 
         <div className={styles.container}>
-          <p
+          <div
             className={styles.customText}
             style={{
               fontFamily: "LexendBold",
@@ -51,27 +47,18 @@ function Care() {
             How To Take Care Of Your Garment
             <br />
             <br />
-          </p>
-          <div className={styles.info} style={{ justifyContent: "flex-start" }}>
-            <img
-              src={washing}
-              style={{
-                margin: 4,
-                marginBottom: 12,
-                padding: 4
-              }}
-              alt="washing"
-            />
-            <p
+          </div>
+          <div className={styles.info}>
+            <img src={washing} alt="washing" />
+            <div
               className={styles.customText}
               style={{
                 fontSize: 18,
-                alignSelf: "end",
-                justifySelf: "flex-end"
+                alignSelf: "flex-start"
               }}
             >
               &nbsp; Washing
-            </p>
+            </div>
           </div>
           <p style={{ color: "#717171" }}>
             <br />
@@ -79,17 +66,16 @@ function Care() {
             cycle with cold water.
             <br />
           </p>
-          <div className={styles.info} style={{ justifyContent: "flex-start" }}>
-            <img src={drying} style={{ margin: 6, padding: 6 }} alt="cancel" />
-            <p
+          <div className={styles.info}>
+            <img src={drying} alt="cancel" />
+            <div
               className={styles.customText}
               style={{
-                fontSize: 18,
-                alignSelf: "flex-end"
+                fontSize: 18
               }}
             >
               &nbsp; Drying
-            </p>
+            </div>
           </div>
           <p style={{ color: "#717171" }}>
             <br />
@@ -98,26 +84,23 @@ function Care() {
             need to flip the sweater to the other side after a few hours.
             <br />
           </p>
-          <div className={styles.info} style={{ justifyContent: "flex-start" }}>
-            <img
-              src={extraCare}
-              style={{ margin: 4, padding: 4 }}
-              alt="cancel"
-            />
-            <p
+          <div className={styles.info}>
+            <img src={extraCare} alt="cancel" />
+            <div
               className={styles.customText}
               style={{
-                fontSize: 18,
-                alignSelf: "flex-end"
+                fontSize: 18
               }}
             >
               &nbsp; Extra Care
-            </p>
+            </div>
           </div>
           <p style={{ color: "#717171" }}>
+            <br />
             After each wear, lay out to air out. Wool sweaters should not be
             laundered often (appx. every 6-10 wears) to last longer.Use a
             sweater comb to take off pilling. (edited)
+            <br />
           </p>
         </div>
       </div>

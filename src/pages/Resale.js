@@ -42,7 +42,11 @@ function Resale() {
           textAlign: "center",
           alignItems: "center",
           alignSelf: "center",
-          width: "60%"
+          width: "60%",
+          // paddingTop: 7,
+          // paddingBottom: 7,
+          marginTop: 7,
+          marginBottom: 7
         }}
       >
         <Link to="/">

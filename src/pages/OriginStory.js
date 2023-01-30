@@ -54,7 +54,7 @@ const OriginStory = () => {
           }}
         >
           <br />
-          About the fabric
+          About The Fabric
           <br />
         </p>
         <p
@@ -79,7 +79,7 @@ const OriginStory = () => {
             fontSize: 22
           }}
         >
-          Product journey
+          Product Journey
         </p>
         <p
         // style={[
@@ -104,7 +104,7 @@ const OriginStory = () => {
             fontSize: 22
           }}
         >
-          Environmental impact
+          Environmental Impact
         </p>
         <div className={styles.info}>
           <img src={Cloud} style={{ width: "8%", height: "8%" }} alt="cancel" />
