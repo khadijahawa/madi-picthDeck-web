@@ -148,8 +148,9 @@ function Resale() {
                   <img
                     src={vestiaire}
                     style={{
-                      margin: 16,
-                      padding: 2
+                      marginLeft: 10,
+                      marginRight: 10,
+                      padding: 6
                     }}
                     alt="vestiaire"
                   />
@@ -187,8 +188,9 @@ function Resale() {
                   <img
                     src={rerobe}
                     style={{
-                      margin: 16,
-                      padding: 2
+                      marginLeft: 10,
+                      marginRight: 10,
+                      padding: 6
                     }}
                     alt="rerobe"
                   />
@@ -227,8 +229,9 @@ function Resale() {
                   <img
                     src={grailed}
                     style={{
-                      margin: 16,
-                      padding: 2
+                      marginLeft: 10,
+                      marginRight: 10,
+                      padding: 6
                     }}
                     alt="grailed"
                   />
