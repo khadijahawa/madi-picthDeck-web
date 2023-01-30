@@ -21,7 +21,7 @@ function Care() {
             textAlign: "center",
             alignItems: "center",
             alignSelf: "center",
-            width: "60%"
+            width: "57%"
           }}
         >
           <Link to="/">
