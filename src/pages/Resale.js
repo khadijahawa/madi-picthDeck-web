@@ -35,7 +35,6 @@ function Resale() {
   return (
     <div>
       <div
-        className={styles.container}
         style={{
           padding: "5%"
         }}
@@ -63,42 +62,18 @@ function Resale() {
               <img src={CloudSvg} alt="cancel" />
             </div>
           </Link>
-          <div
-            className={styles.customText}
-            style={{
-              fontSize: 24
-            }}
-          >
-            Resale
-          </div>
+          <div className={styles.pageHeaders}>Resale</div>
         </div>
-        <p
-          className={styles.customText}
-          style={{
-            fontFamily: "LexendSemiBold"
-          }}
-        >
+        <div className={styles.pageHeaders} style={{ fontSize: 18 }}>
+          <br />
           Interested In Selling Your Product?
-        </p>
-        <p
-          style={{ fontFamily: "LexendLight", fontSize: 14, color: "#717171" }}
-        >
-          Here are some options for you!
-        </p>
+        </div>
+        <div className={styles.customP}>Here are some options for you!</div>
         <img src={home} style={{ width: "100%" }} alt="home" />
         <div>
           <Row>
             <Col xs={7}>
-              <p
-                style={{
-                  color: "black",
-                  fontFamily: "LexendLight",
-                  fontWeight: 540,
-                  fontSize: 16
-                }}
-              >
-                Price you bought it for:
-              </p>
+              <div className={styles.resaleText}>Price you bought it for:</div>
             </Col>
             <Col
               xs={3}
@@ -109,33 +84,17 @@ function Resale() {
                 color: "#717171"
               }}
             >
-              <p className="text-end">250 €</p>
+              <div className={`text-end ${styles.customP}`}>250 €</div>
             </Col>
           </Row>
           <Row>
             <Col xs={6} sm={4}>
-              <p
-                style={{
-                  color: "black",
-                  fontFamily: "LexendLight",
-                  fontWeight: 540,
-                  fontSize: 16
-                }}
-              >
-                Date of purchase:
-              </p>
+              <div className={styles.resaleText}>Date of purchase:</div>
             </Col>
-            <Col
-              xs={6}
-              // sm={2}
-              // m={4}
-              style={{
-                fontFamily: "LexendRegular",
-                color: "#717171"
-              }}
-              className="text-end"
-            >
-              <p>2 December 2022</p>
+            <Col xs={6}>
+              <div className={`text-end ${styles.customP}`}>
+                2 December 2022
+              </div>
             </Col>
           </Row>
         </div>
@@ -146,26 +105,21 @@ function Resale() {
             width: "100%"
           }}
         />
-        <div style={{ width: "100%" }}>
-          <Row
-            className={styles.customText}
-            style={{
-              fontFamily: "LexendBold",
-              fontSize: 18
-            }}
-            xs="auto"
-          >
+        <div style={{ width: "100%", justifyContent: "space-around" }}>
+          <Row xs="auto">
             <Col>
-              <p>Resale options</p>
+              <p className={styles.pageHeaders} style={{ fontSize: 20 }}>
+                Resale options
+              </p>
             </Col>
-            <Col>
+            <Col style={{ marginRight: 10, paddingLeft: 10 }}>
               <ImageModal
                 text={
                   "1. Chose which resaler you wish to sell through.\n\n2. Be directed to their site where all your product information is there.\n\n3. Just enter its condition and it’s ready for sale."
                 }
                 style={{
-                  top: "45%",
-                  height: "45%",
+                  top: "35%",
+                  // height: "45%",
                   width: "65%",
                   left: "32%",
                   padding: "2%",
@@ -188,29 +142,37 @@ function Resale() {
               <Radio value="option1">
                 <div
                   style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignContent: "center",
-                    alignItems: "center"
+                    display: "flex"
                   }}
                 >
                   <img
                     src={vestiaire}
                     style={{
-                      marginLeft: 30,
-
-                      marginRight: 10,
-                      paddingRight: 10
+                      margin: 16,
+                      padding: 2
                     }}
                     alt="vestiaire"
                   />
-                  <p className="text-end" style={{ fontFamily: "Lexend" }}>
-                    Est. resale price:{" "}
-                    <span style={{ color: "#717171" }}>150€</span>
+                  <div
+                    className={`text-end ${styles.resaleText}`}
+                    style={{ fontSize: 13 }}
+                  >
+                    Est. resale price:
+                    <span
+                      className={styles.customP}
+                      style={{ fontWeight: 200 }}
+                    >
+                      150€
+                    </span>
                     <br />
-                    Your estimated commission:{" "}
-                    <span style={{ color: "#717171" }}>85€</span>
-                  </p>
+                    Your estimated commission:
+                    <span
+                      className={styles.customP}
+                      style={{ fontWeight: 200 }}
+                    >
+                      85€
+                    </span>
+                  </div>
                 </div>
               </Radio>
               <Radio value="option2">
@@ -225,20 +187,32 @@ function Resale() {
                   <img
                     src={rerobe}
                     style={{
-                      marginLeft: 30,
-
-                      marginRight: 10,
-                      paddingRight: 10
+                      margin: 16,
+                      padding: 2
                     }}
                     alt="rerobe"
                   />
 
-                  <p className="text-end" style={{ fontFamily: "Lexend" }}>
-                    Est. resale price:{" "}
-                    <span style={{ color: "#717171" }}>150€</span>
-                    <br /> Your estimated commission:{" "}
-                    <span style={{ color: "#717171" }}>85€</span>
-                  </p>
+                  <div
+                    className={`text-end ${styles.resaleText}`}
+                    style={{ fontSize: 13 }}
+                  >
+                    Est. resale price:
+                    <span
+                      className={styles.customP}
+                      style={{ fontWeight: 200 }}
+                    >
+                      150€
+                    </span>
+                    <br />
+                    Your estimated commission:
+                    <span
+                      className={styles.customP}
+                      style={{ fontWeight: 200 }}
+                    >
+                      85€
+                    </span>
+                  </div>
                 </div>
               </Radio>
               <Radio value="option3">
@@ -253,18 +227,31 @@ function Resale() {
                   <img
                     src={grailed}
                     style={{
-                      marginLeft: 30,
-                      marginRight: 10,
-                      paddingRight: 10
+                      margin: 16,
+                      padding: 2
                     }}
                     alt="grailed"
                   />
-                  <p className="text-end" style={{ fontFamily: "Lexend" }}>
-                    Est. resale price:{" "}
-                    <span style={{ color: "#717171" }}>150€</span>
-                    <br /> Your estimated commission:{" "}
-                    <span style={{ color: "#717171" }}>85€</span>
-                  </p>
+                  <div
+                    className={`text-end ${styles.resaleText}`}
+                    style={{ fontSize: 13 }}
+                  >
+                    Est. resale price:
+                    <span
+                      className={styles.customP}
+                      style={{ fontWeight: 200 }}
+                    >
+                      150€
+                    </span>
+                    <br />
+                    Your estimated commission:
+                    <span
+                      className={styles.customP}
+                      style={{ fontWeight: 200 }}
+                    >
+                      85€
+                    </span>
+                  </div>
                 </div>
               </Radio>
             </Space>

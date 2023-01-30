@@ -29,42 +29,29 @@ function Care() {
               <img src={CloudSvg} alt="cancel" />
             </div>
           </Link>
-          <div
-            className={styles.customText}
-            style={{
-              fontSize: 24
-            }}
-          >
-            Care
-          </div>
+          <div className={styles.pageHeaders}>Care</div>
         </div>
 
-        <div className={styles.container}>
-          <div
-            className={styles.customText}
-            style={{
-              fontFamily: "LexendBold",
-              fontSize: 20
-            }}
-          >
+        <div>
+          <p className={styles.pageHeaders} style={{ fontSize: 18 }}>
+            <br />
             <br />
             How To Take Care Of Your Garment
             <br />
             <br />
-          </div>
+          </p>
           <div className={styles.info}>
             <img src={washing} alt="washing" />
             <div
-              className={styles.customText}
+              className={styles.pageHeaders}
               style={{
-                fontSize: 18,
-                alignSelf: "flex-start"
+                fontSize: 16
               }}
             >
               &nbsp; Washing
             </div>
           </div>
-          <p style={{ color: "#717171" }}>
+          <p className={styles.customP}>
             <br />
             Hand wash in cold water with wool/ cashmere detergent, or delicate
             cycle with cold water.
@@ -73,15 +60,15 @@ function Care() {
           <div className={styles.info}>
             <img src={drying} alt="cancel" />
             <div
-              className={styles.customText}
+              className={styles.pageHeaders}
               style={{
-                fontSize: 18
+                fontSize: 16
               }}
             >
               &nbsp; Drying
             </div>
           </div>
-          <p style={{ color: "#717171" }}>
+          <p className={styles.customP}>
             <br />
             Lay flat on towel and roll to take out extra water, but don't ring
             out to dry. Roll back out & lay flat to dry on one side. You may
@@ -91,15 +78,15 @@ function Care() {
           <div className={styles.info}>
             <img src={extraCare} alt="cancel" />
             <div
-              className={styles.customText}
+              className={styles.pageHeaders}
               style={{
-                fontSize: 18
+                fontSize: 16
               }}
             >
               &nbsp; Extra Care
             </div>
           </div>
-          <p style={{ color: "#717171" }}>
+          <p className={styles.customP}>
             <br />
             After each wear, lay out to air out. Wool sweaters should not be
             laundered often (appx. every 6-10 wears) to last longer.Use a

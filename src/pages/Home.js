@@ -42,9 +42,9 @@ const Home = () => {
       </div>
       <img src={home} style={{ width: "100%" }} alt="althome" />
       <div className={styles.info} style={{ justifyContent: "center" }}>
-        <p className={styles.text} style={{ marginRight: 4 }}>
+        <div className={styles.text} style={{ marginRight: 4 }}>
           This product is authenticated
-        </p>
+        </div>
         <ImageModal
           text="This product is authenticated by MĀDI."
           style={{
@@ -73,22 +73,38 @@ const Home = () => {
         <div className="accordion" id="accordionExample">
           <div className={styles.HomeButtonSection}>
             <div id="headingOne" className={styles.HomeButtonText}>
-              <button className={styles.HomeButton} onClick={gottoOriginStory}>
+              <button
+                className={styles.HomeButton}
+                onClick={gottoOriginStory}
+                style={{ margin: 9 }}
+              >
                 Origin Story
               </button>
             </div>
             <div id="headingTow">
-              <button className={styles.HomeButton} onClick={gottoCare}>
+              <button
+                className={styles.HomeButton}
+                onClick={gottoCare}
+                style={{ margin: 9 }}
+              >
                 Care
               </button>
             </div>
             <div id="headingThree">
-              <button className={styles.HomeButton} onClick={gottoRepair}>
+              <button
+                className={styles.HomeButton}
+                onClick={gottoRepair}
+                style={{ margin: 9 }}
+              >
                 Repair
               </button>
             </div>
             <div id="headingFour">
-              <button className={styles.HomeButton} onClick={gottoResale}>
+              <button
+                className={styles.HomeButton}
+                onClick={gottoResale}
+                style={{ margin: 9 }}
+              >
                 Resale
               </button>
             </div>

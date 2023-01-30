@@ -1,13 +1,52 @@
-.container {
-  width: "100%";
-  padding-bottom: 5%;
-  padding-top: 5%;
+@font-face {
+  font-family: "Lexend-Regular";
+  src: url("../assets/fonts/Lexend-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "Lexend-SemiBold";
+  src: url("../assets/fonts/Lexend-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lexend-Bold";
+  src: url("../assets/fonts/Lexend-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sora-Bold";
+  src: url("../assets/fonts/Sora-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sora-SemiBold";
+  src: url("../assets/fonts/Sora-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sora-Light";
+  src: url("../assets/fonts/Sora-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sora-ExtraLight";
+  src: url("../assets/fonts/Sora-ExtraLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .infoIcon {
   margin-left: 5px;
 }
 .infoText {
-  font-family: "SoraLight";
+  font-family: "Sora-Light";
 }
 .info {
   display: flex;
@@ -21,18 +60,18 @@
 }
 .text {
   color: #717171;
-  font: "SoraExtraLight";
+  font: "Sora-ExtraLight";
   font-size: 12;
 }
 .digitalidtext {
-  font-family: "Lexend";
+  font-family: "Lexend-Regular";
   color: "#717171";
   font-weight: 400;
 }
 
 .customText {
   color: #151513;
-  font-family: "Lexend-medium";
+  font-family: "Lexend-SemiBold";
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0.5;
@@ -55,7 +94,7 @@
   font: #151513;
   color: #151513;
 
-  font-family: "Lexend";
+  font-family: "Lexend-Regular";
   width: 100%;
   height: 48px;
   justify-content: center;
@@ -67,7 +106,8 @@
   font-size: 17px;
   line-height: 23%;
   text-align: center;
-  margin: 9px;
+  border-radius: 3px;
+  /* margin: 9px; */
 }
 .HomeButton:hover {
   font: #151513;
@@ -83,4 +123,23 @@
 .breakLine {
   white-space: pre-line;
   word-break: break-all;
+}
+
+.pageHeaders {
+  font-family: "Lexend-SemiBold";
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.1px;
+}
+
+.customP {
+  font-family: "Lexend-Regular";
+  color: #717171;
+  font-size: 15px;
+}
+.resaleText {
+  font-family: "Lexend-Regular";
+  color: #000000;
+  font-weight: 600;
+  font-size: 14px;
 }

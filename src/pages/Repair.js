@@ -15,10 +15,7 @@ function Repair() {
 
   return (
     <div>
-      <div
-        style={{ padding: "5%", paddingTop: "10%" }}
-        className={styles.container}
-      >
+      <div style={{ padding: "5%", paddingTop: "10%" }}>
         <div
           className={styles.info}
           style={{
@@ -38,30 +35,13 @@ function Repair() {
               <img src={CloudSvg} alt="cancel" />
             </div>
           </Link>
-          <div
-            className={styles.customText}
-            style={{
-              fontSize: 24
-            }}
-          >
-            Repair
-          </div>
+          <div className={styles.pageHeaders}>Repair</div>
         </div>
-        <p
-          className={styles.customText}
-          style={{
-            fontFamily: "LexendSemiBold"
-          }}
-        >
+        <p className={styles.pageHeaders} style={{ fontSize: 22 }}>
           <br />
           Did you know?
         </p>
-        <p
-          style={{
-            fontFamily: "LexendLight",
-            color: "#717171"
-          }}
-        >
+        <p className={styles.customP}>
           Extending the life of a garment by 3 months can reduce carbon, waste
           and water footprints by 5-10%.
           <br />
@@ -78,23 +58,23 @@ function Repair() {
               <img src={location} alt="cancel" />
             </Col>
             <Col xs={10}>
-              <p
-                // className={styles.customText}
+              <div
+                className={styles.pageHeaders}
                 style={{
-                  fontFamily: "LexendSemiBold",
                   fontSize: 16,
-                  fontWeight: 600
+                  fontWeight: 600,
+                  marginBottom: 4
                 }}
-                className="text-start"
+                // className="text-start"
               >
                 &nbsp; Fix & Wear
-              </p>
+              </div>
               <p
+                className={styles.customP}
                 style={{
-                  fontFamily: "LexendLight",
                   fontSize: 14
                 }}
-                className="text-start"
+                // className="text-start"
               >
                 &nbsp; Rådhusstræde 8, 1466 København
               </p>
