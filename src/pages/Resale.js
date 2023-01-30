@@ -105,7 +105,11 @@ function Resale() {
             width: "100%"
           }}
         />
-        <div style={{ width: "100%", justifyContent: "space-around" }}>
+        <div
+          style={{
+            width: "100%"
+          }}
+        >
           <Row xs="auto">
             <Col>
               <p className={styles.pageHeaders} style={{ fontSize: 20 }}>
@@ -134,22 +138,22 @@ function Resale() {
             value={value}
             style={{
               display: "flex",
-              justifyContent: "space-evenly",
-              flexDirection: "row"
+              justifyContent: "space-evenly"
             }}
           >
             <Space direction="vertical">
-              <Radio value="option1">
+              <Radio value="option1" style={{ marginLeft: 2 }}>
                 <div
                   style={{
-                    display: "flex"
+                    display: "flex",
+                    gap: 20
                   }}
                 >
                   <img
                     src={vestiaire}
                     style={{
-                      marginLeft: 10,
-                      marginRight: 10,
+                      // marginLeft: 10,
+                      // marginRight: 10,
                       padding: 6
                     }}
                     alt="vestiaire"
@@ -176,20 +180,18 @@ function Resale() {
                   </div>
                 </div>
               </Radio>
-              <Radio value="option2">
+              <Radio value="option2" style={{ marginLeft: 2 }}>
                 <div
                   style={{
                     display: "flex",
-                    justifyContent: "center",
-                    alignContent: "center",
-                    alignItems: "center"
+                    gap: 20
                   }}
                 >
                   <img
                     src={rerobe}
                     style={{
-                      marginLeft: 10,
-                      marginRight: 10,
+                      // marginLeft: 10,
+                      // marginRight: 10,
                       padding: 6
                     }}
                     alt="rerobe"
@@ -217,20 +219,18 @@ function Resale() {
                   </div>
                 </div>
               </Radio>
-              <Radio value="option3">
+              <Radio value="option3" style={{ marginLeft: 2 }}>
                 <div
                   style={{
                     display: "flex",
-                    justifyContent: "center",
-                    alignContent: "center",
-                    alignItems: "center"
+                    gap: 20
                   }}
                 >
                   <img
                     src={grailed}
                     style={{
-                      marginLeft: 10,
-                      marginRight: 10,
+                      // marginLeft: 10,
+                      // marginRight: 10,
                       padding: 6
                     }}
                     alt="grailed"
@@ -260,7 +260,11 @@ function Resale() {
             </Space>
           </Radio.Group>
           <div style={{ padding: "1%", marginRight: "3%" }}>
-            <button className={styles.HomeButton} onClick={handleContinue}>
+            <button
+              className={styles.HomeButton}
+              onClick={handleContinue}
+              style={{ marginTop: 9, marginBottom: 9 }}
+            >
               Continue
             </button>
           </div>
