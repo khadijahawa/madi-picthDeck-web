@@ -64,7 +64,7 @@ function Resale() {
           </Link>
           <div className={styles.pageHeaders}>Resale</div>
         </div>
-        <div className={styles.pageHeaders} style={{ fontSize: 18 }}>
+        <div className={styles.pageHeaders} style={{ fontSize: 16 }}>
           <br />
           Interested In Selling Your Product?
         </div>
@@ -106,9 +106,9 @@ function Resale() {
           }}
         />
         <div
-          style={{
-            width: "100%"
-          }}
+        // style={{
+        //   width: "100%"
+        // }}
         >
           <Row xs="auto">
             <Col>
@@ -116,7 +116,7 @@ function Resale() {
                 Resale options
               </p>
             </Col>
-            <Col style={{ marginRight: 10, paddingLeft: 10 }}>
+            <Col style={{ paddingLeft: 10, marginRight: 20, margin: 1 }}>
               <ImageModal
                 text={
                   "1. Chose which resaler you wish to sell through.\n\n2. Be directed to their site where all your product information is there.\n\n3. Just enter its condition and it’s ready for sale."
@@ -154,13 +154,13 @@ function Resale() {
                     style={{
                       // marginLeft: 10,
                       // marginRight: 10,
-                      padding: 6
+                      padding: 1
                     }}
                     alt="vestiaire"
                   />
                   <div
                     className={`text-end ${styles.resaleText}`}
-                    style={{ fontSize: 13 }}
+                    style={{ fontSize: 11, marginLeft: 10 }}
                   >
                     Est. resale price:
                     <span
@@ -192,14 +192,14 @@ function Resale() {
                     style={{
                       // marginLeft: 10,
                       // marginRight: 10,
-                      padding: 6
+                      padding: 1
                     }}
                     alt="rerobe"
                   />
 
                   <div
                     className={`text-end ${styles.resaleText}`}
-                    style={{ fontSize: 13 }}
+                    style={{ fontSize: 11, marginLeft: 10 }}
                   >
                     Est. resale price:
                     <span
@@ -231,13 +231,13 @@ function Resale() {
                     style={{
                       // marginLeft: 10,
                       // marginRight: 10,
-                      padding: 6
+                      padding: 1
                     }}
                     alt="grailed"
                   />
                   <div
                     className={`text-end ${styles.resaleText}`}
-                    style={{ fontSize: 13 }}
+                    style={{ fontSize: 11, marginLeft: 10 }}
                   >
                     Est. resale price:
                     <span

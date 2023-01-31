@@ -89,25 +89,18 @@
   padding-right: 4px;
   /* padding-right: 3px;  */
 }
+
 .HomeButton {
   background-color: #efefef;
-  font: #151513;
   color: #151513;
-
   font-family: "Lexend-Regular";
   width: 100%;
   height: 48px;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
   border: none;
-  font-family: "Inter";
-  font-weight: 400px;
-  font-size: 17px;
-  line-height: 23%;
+  font-weight: 400;
+  font-size: 16px;
   text-align: center;
   border-radius: 3px;
-  /* margin: 9px; */
 }
 .HomeButton:hover {
   font: #151513;
